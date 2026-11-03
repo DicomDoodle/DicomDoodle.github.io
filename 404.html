@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found · DicomDoodle</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;600&family=Atkinson+Hyperlegible+Next:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap">
+<style>
+:root {
+  /* layout: the site's reading room, one centred viewer panel */
+  --bg: #070b12; --panel: #0d141f; --line: #22324a; --text: #e8eef6; --muted: #98a7bc; --accent: #66b2ff;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible Next", "Segoe UI", system-ui, sans-serif;
+  --mono: "Atkinson Hyperlegible Mono", Consolas, ui-monospace, monospace;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; display: grid; place-items: center; padding: 24px 16px; background: var(--bg); color: var(--text); font: 400 1.0625rem/1.6 var(--body); }
+main { width: min(560px, 100%); background: var(--panel); border: 1px solid var(--line); border-radius: 18px; padding: clamp(24px, 6vw, 44px); display: grid; gap: 18px; }
+.hud { font: 400 .78rem/1.4 var(--mono); color: var(--muted); }
+h1 { margin: 0; font: 800 clamp(2rem, 7vw, 2.8rem)/1.05 var(--display); letter-spacing: -.02em; }
+p { margin: 0; color: var(--muted); }
+.track { position: relative; height: 16px; }
+.track::before { content: ""; position: absolute; left: 0; right: 0; top: 7px; height: 2px; background: var(--line); }
+.track span { position: absolute; left: 0; right: 0; top: 4px; height: 8px; background: radial-gradient(circle, rgba(152, 167, 188, .5) 0 1.1px, transparent 1.5px) 0 0 / calc(100% / 40) 100% repeat-x; }
+a.btn { justify-self: start; display: inline-flex; gap: 10px; align-items: center; background: var(--accent); color: #04101f; font-weight: 700; text-decoration: none; border-radius: 12px; padding: 13px 20px; }
+a.btn:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+</style>
+</head>
+<body>
+<main>
+  <p class="hud">Slice — / 166 · no file</p>
+  <h1>Slice not found</h1>
+  <p>This page is not part of the series. Everything about DicomDoodle, and the download, is on the home page.</p>
+  <div class="track" aria-hidden="true"><span></span></div>
+  <a class="btn" href="/"><img src="/assets/mascot-128.webp" width="24" height="24" alt="">Back to DicomDoodle</a>
+</main>
+</body>
+</html>
