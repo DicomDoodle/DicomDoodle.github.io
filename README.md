@@ -10,13 +10,22 @@ The download page of DicomDoodle, served by GitHub Pages at <https://dicomdoodle
 | `favicon.ico` | the icon in the browser tab |
 | `.nojekyll` | tells GitHub Pages to serve the files as they are |
 
-## A new version of DicomDoodle
+## Two downloads
+
+From DicomDoodle 2.1 the installer has no AI models: they are a second download,
+the **model card** (`DicomDoodle-ModelCard-<version>.ddcard`), attached to its own
+release `model-card-<version>`. The page offers both, in the download box (step 1
+the program, step 2 the AI models) and in the install steps.
+
+## A new version of DicomDoodle or of the model card
 
 Nothing to change. The page asks GitHub for the latest release of
-[pushplochan/DicomDoodle](https://github.com/pushplochan/DicomDoodle/releases) and shows
-its version, size, date, SHA-256 and download link. The values written in
-`index.html` (search for `2.0.0`) are used only when that request fails, so
-update them when convenient.
+[pushplochan/DicomDoodle](https://github.com/pushplochan/DicomDoodle/releases)
+(the installer, `*-Setup.exe`) and for the `model-card-…` release with the
+highest version (the `.ddcard` file), and shows the version, size, date, SHA-256
+and download link of each. The values written in `index.html` (search for
+`2.1.0` and `ModelCard-1.0`) are used only when those requests fail, so update
+them when convenient.
 
 ## A different address
 
